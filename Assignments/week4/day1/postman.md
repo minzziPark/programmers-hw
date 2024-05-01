@@ -8,8 +8,7 @@ app.post("/test", (req, res) => {
 ```
 
 ### 결과
-
-![poster](./img/day1_1.png)
+<img src="./img/day1_1.png" width="700px">
 실행이 잘안되는 것을 볼 수 있음.
 <br>
 
@@ -21,18 +20,18 @@ app.post("/test", (req, res) => {
    - Body에 숨겨서 보낼 것임
 
 - 어떻게 Body에 있는 내용을 보낼 수 있을까? **postman!!**
-  ![poster](./img/day1_2.png)
+<img src="./img/day1_2.png" width="700px">
 
 # postman에서 get 테스트하기
 
 1. 왼쪽 상단 + 버튼 누르기 -> 탭이 뜰 것임
 2. method GET으로 맞춰주고 url에 localhost 주소와 path 넣어주기
 3. 하단 Body 결과에 res.json 혹은 res.send의 결과가 뜰 것이다.
-   ![poster](./img/day1_3.png)
+   <img src="./img/day1_3.png" width="700px">
 
 # post를 위해 Body에 데이터 전달하기
 
-![poster](./img/day1_4.png)
+<img src="./img/day1_4.png" width="700px">
 
 - 1번 Body : req로 보낼 body
 - 2번 Body : res로 받은 body
@@ -40,7 +39,8 @@ app.post("/test", (req, res) => {
 ## 중요!! app.use(express.json())
 
 -> 위 코드를 넣어주어야만 req로 날아오는 body값을 json 형태로 읽을 수 있다.
-![poster](./img/day1_5.png)
+<img src="./img/day1_5.png" width="700px">
+
 사진에 있는대로 request 보낼 때 Body에 raw, JSON으로 선택한 다음 값을 JSON 형식으로 보내주기
 
 ### request로 온 body 읽기 req.body
